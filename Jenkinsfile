@@ -17,6 +17,7 @@ pipeline {
         stage('Build Frontend and Deploy') {
             steps {
                 dir('/home/ubuntu/strayway') {
+                    sh 'git pull'
                     sh 'npm install'
                     sh 'npm run build'
                     sh 'JENKINS_NODE_COOKIE=dontKillMe nohup node serveProduction.cjs > /home/ubuntu/strayway/strayway_interstaging.log 2>1&'
