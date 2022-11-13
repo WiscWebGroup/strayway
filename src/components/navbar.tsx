@@ -21,11 +21,12 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
         sx={{
           position: 'fixed',
           bottom: 5,
-          width: '100vw',
+          left: '2.5vw',
+          width: '95vw',
           backgroundColor: '#15AABF',
           padding: '10',
           overflow: 'hidden',
-          borderRadius: '10px',
+          borderRadius: '2rem',
           zIndex: 999,
         }}
         justify={'space-evenly'}

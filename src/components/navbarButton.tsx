@@ -20,6 +20,7 @@ const NavbarButton: FunctionComponent<NavbarButtonProps> = ({
       justify={'center'}
       align={'center'}
       onClick={() => navigate(routeTo)}
+      sx={{ width: '3rem' }}
     >
       <ActionIcon variant='transparent'>{icon}</ActionIcon>
       <Text color={'white'} size={'xs'}>
