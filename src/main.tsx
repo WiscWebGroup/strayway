@@ -44,6 +44,7 @@ function Main() {
       ],
       errorElement: <Errorpage />,
       },
+
       {
         path: '/',
         element: <Index />,
