@@ -190,9 +190,8 @@ function Donate() {
                     <IconCheck />
                   </Badge>
                 </Flex>
-
                 <Text size='sm' weight={300}>
-                  Bounded at 2001
+                  Founded in 2001
                 </Text>
                 <Text size='xs' weight={300}>
                   Location: Madison, WI
@@ -242,7 +241,7 @@ function Donate() {
                 </Flex>
 
                 <Text size='sm' weight={300}>
-                  Bounded at 1996
+                  Founded in 1996
                 </Text>
                 <Text size='xs' weight={300}>
                   Location: Vancouver, Canada
@@ -293,13 +292,13 @@ function Donate() {
                 </Flex>
 
                 <Text size='sm' weight={300}>
-                  Bounded at 2007
+                  Founded in 2007
                 </Text>
                 <Text size='xs' weight={300}>
                   Location: Shenzhen, China
                 </Text>
                 <Text size='xs'>
-                  Kuoluo Org. is an organization for animal care. We are
+                  Kuoluo Org is an organization for animal care. We are
                   non-profit organization that help stray animals, disabled
                   animals in China. We are now trying to build a new animal care
                   facility in Huangzhou and we need more donation and

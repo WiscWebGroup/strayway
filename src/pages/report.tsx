@@ -75,7 +75,7 @@ const Report: FunctionComponent<ReportProps> = () => {
                 'Hamster',
                 'Others',
               ]}
-              label='What type of animal did you found?'
+              label='What type of animal did you find?'
               placeholder='Please select'
               sx={{ width: '100%' }}
               size={'lg'}
