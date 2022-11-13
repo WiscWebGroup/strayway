@@ -1,6 +1,6 @@
 # StrayWay - Cheeshack2022
 
-<img src="https://raw.githubusercontent.com/WiscWebGroup/strayway/main/assets/logo_transparent.png" height="250px"/>
+<img src="https://raw.githubusercontent.com/WiscWebGroup/strayway/main/public/logo_transparent.png" height="250px"/>
 
 The StrayWay is an online platform face to both providers(shelters or individual pet caretakers) and adopters, especially for animals with disabilities. Our app aims to get every stray disabled animal a real home.
 
