@@ -1,28 +1,9 @@
-import { Link } from 'react-router-dom';
-import {
-  Text,
-  Button,
-  Title,
-  Box,
-  Flex,
-  Container,
-  Paper,
-  TypographyStylesProvider,
-  ActionIcon,
-  Badge,
-} from '@mantine/core';
-import { useState } from 'react';
-import {
-  createStyles,
-  Header,
-  Autocomplete,
-  Group,
-  Burger,
-} from '@mantine/core';
+import { Text, Button, Flex, Badge } from '@mantine/core';
+import { createStyles, Header, Autocomplete, Group } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconActivity, IconHeart, IconSearch } from '@tabler/icons';
 import { Avatar } from '@mantine/core';
-import { Card, Overlay, CardProps } from '@mantine/core';
+import { Card, Overlay } from '@mantine/core';
 import { IconCheck } from '@tabler/icons';
 
 const useStyles = createStyles((theme) => ({

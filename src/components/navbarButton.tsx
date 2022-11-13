@@ -1,6 +1,5 @@
-import { ActionIcon, Button, Card, Flex, Text } from '@mantine/core';
+import { ActionIcon, Flex, Text } from '@mantine/core';
 import { FunctionComponent } from 'react';
-import { IconPaw, TablerIcon } from '@tabler/icons';
 import { useNavigate } from 'react-router-dom';
 interface NavbarButtonProps {
   text: string;

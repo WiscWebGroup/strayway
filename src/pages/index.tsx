@@ -1,32 +1,5 @@
-import { Link, useNavigate } from 'react-router-dom';
-import {
-  Text,
-  Button,
-  Title,
-  Image,
-  Box,
-  Flex,
-  Container,
-  Paper,
-  TypographyStylesProvider,
-  ActionIcon,
-  Badge,
-} from '@mantine/core';
-import { useState } from 'react';
-import {
-  createStyles,
-  Header,
-  Autocomplete,
-  Group,
-  Burger,
-} from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { IconHeart, IconSearch } from '@tabler/icons';
-import { IconShield } from '@tabler/icons';
-import { Avatar } from '@mantine/core';
-import { Card, Overlay, CardProps } from '@mantine/core';
-import { IconCheck } from '@tabler/icons';
-import { ThemeContext } from '@emotion/react';
+import { useNavigate } from 'react-router-dom';
+import { Text, Button, Title, Image, Flex, Container } from '@mantine/core';
 
 function Index() {
   const navigate = useNavigate();

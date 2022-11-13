@@ -1,19 +1,7 @@
 import { FC } from 'react';
-import {
-  Title,
-  Flex,
-  Button,
-  Image,
-  Badge,
-  ActionIcon,
-  Menu,
-  SimpleGrid,
-  Container,
-  ThemeIcon,
-} from '@mantine/core';
-import { Link } from 'react-router-dom';
-import { createStyles, Card, Avatar, Text, Group } from '@mantine/core';
-import { IconPaw, IconActivity, IconSettings } from '@tabler/icons';
+import { Flex, Image, Badge } from '@mantine/core';
+import { Card, Avatar, Text, Group } from '@mantine/core';
+import { IconPaw, IconActivity } from '@tabler/icons';
 
 interface ProfileProps {}
 

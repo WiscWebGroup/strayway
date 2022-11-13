@@ -1,8 +1,8 @@
-import { Box, Flex, Grid, Text } from '@mantine/core';
+import { Box, Flex } from '@mantine/core';
 import { FunctionComponent } from 'react';
 import { Outlet } from 'react-router-dom';
 import NavbarButton from './navbarButton';
-import { IconPaw, IconPlus, IconUser } from '@tabler/icons';
+import { IconPaw, IconUser } from '@tabler/icons';
 import ReportMenu from './reportMenu';
 
 interface NavbarProps {}

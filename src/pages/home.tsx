@@ -1,18 +1,13 @@
-import { Link } from 'react-router-dom';
 import {
   Text,
   Button,
-  Title,
-  Box,
   Flex,
-  Container,
   Paper,
   TypographyStylesProvider,
   ActionIcon,
   Badge,
   Menu,
 } from '@mantine/core';
-import { useState } from 'react';
 import {
   createStyles,
   Header,
@@ -22,9 +17,8 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconHeart, IconSearch } from '@tabler/icons';
-import { IconShield } from '@tabler/icons';
 import { Avatar } from '@mantine/core';
-import { Card, Overlay, CardProps } from '@mantine/core';
+import { Card, Overlay } from '@mantine/core';
 import { IconCheck } from '@tabler/icons';
 import { useNavigate } from 'react-router-dom';
 
