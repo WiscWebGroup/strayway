@@ -10,6 +10,7 @@ import {
   TypographyStylesProvider,
   ActionIcon,
   Badge,
+  Menu
 } from '@mantine/core';
 import { useState } from 'react';
 import {
@@ -25,6 +26,7 @@ import { IconShield } from '@tabler/icons';
 import { Avatar } from '@mantine/core';
 import { Card, Overlay, CardProps } from '@mantine/core';
 import { IconCheck } from '@tabler/icons';
+import { useNavigate } from 'react-router-dom';
 
 const useStyles = createStyles((theme) => ({
   header: {
@@ -86,13 +88,23 @@ const useStyles = createStyles((theme) => ({
 function Home() {
   const [opened, { toggle }] = useDisclosure(false);
   const { classes } = useStyles();
-
+  const navigate = useNavigate();
   return (
     <>
       <Header height={60} className={classes.header} mb={0}>
         <div className={classes.inner}>
           <Group>
-            <Burger opened={opened} onClick={toggle} size='sm' />
+            <Menu shadow="md" width={200} onClose={toggle}>
+              <Menu.Target>
+                <Burger opened={opened} onClick={toggle} size='sm' />
+              </Menu.Target>
+
+              <Menu.Dropdown>
+                <Menu.Label>Application</Menu.Label>
+                <Menu.Item onClick={() => navigate('/')}>Home Page</Menu.Item>
+              </Menu.Dropdown>
+            </Menu>
+
             <Autocomplete
               placeholder='Search'
               icon={<IconSearch size={16} stroke={1.5} />}

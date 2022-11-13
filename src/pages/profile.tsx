@@ -28,7 +28,7 @@ const Profile: FC<ProfileProps> = () => {
             alt='Norway'
           />
           <Avatar
-            src='https://cheng-bing.top/wp-content/uploads/2020/09/cropped-20200811_2_f2-1.jpg'
+            src='http://cheng-bing.top/wp-content/uploads/2022/09/DSC07788-scaled.jpg'
             alt="it's me"
             size={80}
             radius={80}
