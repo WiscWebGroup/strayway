@@ -4,6 +4,8 @@
 
 The StrayWay is an online platform face to both providers(shelters or individual pet caretakers) and adopters, especially for animals with disabilities. Our app aims to get every stray disabled animal a real home.
 
+Note: This version of APP is for mobile use.
+
 # What we used
 - Frontend: React, Typescript, Vite
 - UI: Mantine
