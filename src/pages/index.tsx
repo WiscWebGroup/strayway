@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   Text,
   Button,
@@ -28,64 +28,83 @@ import { Card, Overlay, CardProps } from '@mantine/core';
 import { IconCheck } from '@tabler/icons';
 import { ThemeContext } from '@emotion/react';
 
-
-
 function Index() {
-  
-
+  const navigate = useNavigate();
   return (
-    <>
-        <div style={{"backgroundImage": "url('jack-russell-2310391_960_720.jpg')", }}>
-            <Container style={{"backgroundColor": "rgba(86, 92, 97, .5)", "height": "10vh", "alignItems":"left", "position": "relative"}}>
-                <Image
-                    width={"10vh"}
-                    src={"logo_transparent.png"}
-                    fit={"contain"}
-                    radius={"lg"}
-                    style={{"position" : "relative", "float": "left"}}
-                />
-                <Title
-                    variant='gradient'
-                    gradient={{ from: 'white', to: 'cyan' }}
-                    inherit
-                    style={{"position" : "relative", "float": "left", "marginTop": "2vh"}}
-                >
-                    StrayWay
-                </Title>
-                
-            </Container>
-            <Container style={{"height": "36vh"}}>
-                <Text size='xl' weight={800} color={"white"} style={{"fontSize": "40px", "marginTop": "8vh"}}>
-                        We Are StrayWay, We Help Animals
-                </Text>
-            </Container>
-        </div>
-
-        <div style={{"backgroundImage": "url('cat-2536662_960_720.jpg')", "marginTop": "-10vh", "backgroundSize": "cover"}}>
-            <Container style={{"height": "46vh"}}>
-                <Title size='xl' weight={800} variant="gradient" gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }} style={{"fontSize": "40px", "marginTop": "8vh"}}>
-                        Here, We Provide Love & Care
-                </Title>
-            </Container>
-        </div>
-
-        <div style={{"backgroundImage": "url('http://www.sinaimg.cn/dy/slidenews/1_img/2013_08/28436_233668_548745.jpg')", "marginTop": "-10vh", "backgroundSize": "cover"}}>
-            <Container style={{"height": "46vh"}}>
-                <Title size='xl' weight={800} variant="gradient" gradient={{ from: 'orange', to: 'white', deg: 60 }} style={{"fontSize": "40px", "marginTop": "8vh"}}>
-                        About Us
-                </Title>
-                <Text size='xl' weight={800} color={"#F7C280"} style={{"fontSize": "30px", "marginTop": "2vh"}}>
-                        - THE OS Crew -<br/>
-                        Yixuan Ye<br/>
-                        Simon Fu<br/>
-                </Text>
-                <Text size='xl' weight={800} color={"#F7C280"} style={{"fontSize": "30px"}}>
-                        Wong Tsz Yat<br/>
-                        Jeffrey Hui
-                </Text>
-            </Container>
-        </div>
-    </>
+    <div
+      style={{
+        backgroundImage: 'url(jack-russell-2310391_960_720.jpg)',
+        boxShadow:
+          '0px 4px 4px 0px #00000040,inset 0 0 0 1000px rgba(0,0,0,.2)',
+        backgroundSize: 'cover',
+        backgroundPositionX: '-11rem',
+        width: '100vw',
+        height: '100vh',
+        overflow: 'hidden',
+      }}
+    >
+      <Flex
+        direction={'row'}
+        justify={'space-between'}
+        sx={{
+          height: '10vh',
+          padding: '1rem',
+        }}
+      >
+        <Image
+          width={'10vh'}
+          src={'logo_transparent.png'}
+          fit={'contain'}
+          radius={'lg'}
+          style={{ position: 'relative', float: 'left' }}
+        />
+        <Title
+          color={'cyan.6'}
+          style={{ position: 'relative', float: 'left', marginTop: '2vh' }}
+        >
+          StrayWay
+        </Title>
+      </Flex>
+      <Container style={{ height: '80vh' }}>
+        <Title
+          weight={800}
+          color={'white'}
+          style={{ fontSize: '2.5rem', marginTop: '1rem' }}
+        >
+          Find a home for{' '}
+          <Title
+            weight={800}
+            variant='gradient'
+            gradient={{ from: 'blue', to: 'cyan' }}
+            sx={{ fontSize: '2.5rem' }}
+          >
+            animals
+          </Title>{' '}
+          with care and{' '}
+          <Title
+            weight={800}
+            variant='gradient'
+            gradient={{ from: 'blue', to: 'cyan' }}
+            sx={{ fontSize: '2.5rem' }}
+          >
+            love
+          </Title>{' '}
+        </Title>
+        <Text color={'gray.5'} sx={{ width: '70vw' }}>
+          Discover, adopt, and report animals with ease - at StrayWay, we care
+          about animals.
+        </Text>
+        <Button
+          size='lg'
+          variant='gradient'
+          gradient={{ from: 'blue', to: 'cyan' }}
+          sx={{ marginTop: '2rem' }}
+          onClick={() => navigate('/home')}
+        >
+          Get started now
+        </Button>
+      </Container>
+    </div>
   );
 }
 

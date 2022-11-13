@@ -10,7 +10,7 @@ interface NavbarProps {}
 const Navbar: FunctionComponent<NavbarProps> = () => {
   return (
     <Flex
-      sx={{ padding: 10, width: '100vw', overflow: 'hidden' }}
+      sx={{ width: '100vw', overflow: 'hidden' }}
       direction={'column'}
       gap={10}
     >

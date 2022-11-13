@@ -12,13 +12,13 @@ import Navbar from './components/navbar';
 import './global.css';
 import Report from './pages/report';
 import Donate from './pages/donate';
-import Index from './pages';
 import Offer from './pages/offer';
+import Index from './pages';
+import { Errorpage } from './pages/errorPage';
 
 function Main() {
   const router = createBrowserRouter([
     {
-      path: '/',
       element: <Navbar />,
       children: [
         {
@@ -38,14 +38,15 @@ function Main() {
           element: <Donate />,
         },
         {
-          path: '/',
-          element: <Index />,
-        },
-        {
           path: '/offer',
-          element: <Offer/>,
+          element: <Offer />,
         },
       ],
+      errorElement: <Errorpage />,
+    },
+    {
+      path: '/index',
+      element: <Index />,
     },
   ]);
 
