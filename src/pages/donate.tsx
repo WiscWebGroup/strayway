@@ -90,12 +90,8 @@ function Donate() {
     <>
       <Header height={60} className={classes.header} mb={0}>
         <div className={classes.inner}>
-        <Group>
-            <Avatar
-              src='logo_transparent.png'
-              alt="it's me"
-              size={'md'}
-            />
+          <Group>
+            <Avatar src='logo_transparent.png' alt="it's me" size={'md'} />
           </Group>
           <Group>
             <Autocomplete
@@ -103,9 +99,14 @@ function Donate() {
               icon={<IconSearch size={16} stroke={1.5} />}
               data={[]}
             />
-            <Button variant="gradient" gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }} size={"sm"}><IconSearch /></Button>
+            <Button
+              variant='gradient'
+              gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }}
+              size={'sm'}
+            >
+              <IconSearch />
+            </Button>
           </Group>
-          
         </div>
       </Header>
       <Flex
@@ -139,8 +140,11 @@ function Donate() {
               className={classes.description}
               style={{ display: 'flex', marginTop: '0px' }}
             >
-              AM Home is an organization established in 2006 at York, UK. We have adopted over 2000+ animals and our campus is the home of these lovely creatures. We are currently experiencing 
-              difficulties like lack of funding, volunteers, etc. Please help us so that we can help more animals!
+              AM Home is an organization established in 2006 at York, UK. We
+              have adopted over 2000+ animals and our campus is the home of
+              these lovely creatures. We are currently experiencing difficulties
+              like lack of funding, volunteers, etc. Please help us so that we
+              can help more animals!
             </Text>
 
             <Button
@@ -156,139 +160,170 @@ function Donate() {
           </div>
         </Card>
 
-        <Card withBorder shadow="sm" radius="md">
-      <Card.Section withBorder inheritPadding py="xs">
-        <Group position="apart">
-          <Text weight={550}>Help These Organizations!</Text>
-          <IconActivity/>
-        </Group>
-      </Card.Section>
-      
-      <Card.Section inheritPadding mt="sm" pb="md">
+        <Card withBorder shadow='sm' radius='md'>
+          <Card.Section withBorder inheritPadding py='xs'>
+            <Group position='apart'>
+              <Text weight={550}>Help These Organizations!</Text>
+              <IconActivity />
+            </Group>
+          </Card.Section>
 
-      <Group style={{"alignItems": "start", marginBottom:'5px'}}>
-        <Avatar size={"lg"} mt={10} src="http://cheng-bing.top/wp-content/uploads/2020/06/images.jpg" radius="xl" />
-        
-        <div >
-            <Flex>
-            <Text size="md" weight={600}>
-            Badger Animal Home
-            
-          </Text>
-          <Badge
-                  variant='gradient'
-                  gradient={{ from: 'indigo', to: 'cyan' }}
-                  ml={10}
-            >
-            <IconCheck />
-            </Badge>
-            </Flex>
-          
-          <Text size="sm" weight={300}>
-              Bounded at 2001
-          </Text>
-          <Text size="xs" weight={300}>
-              Location: Madison, WI
-          </Text>
-          <Text size="xs">
-            Badger Animal Home is an organization set up by students and other volunteers in Madison. The group was founded at 2001 and now we are experiencing a high volume of 
-            animal in our campus. We are currently short of funding.
-          </Text>
-          <Group mt="xs">
-          <Button variant="gradient" gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }} leftIcon={<IconHeart/>} >
-                Make a Donation
-            </Button>
-            <Button variant="gradient" gradient={{ from: 'teal', to: 'blue', deg: 60 }} >
-                Learn More
-            </Button>
-          </Group>
-          
-          </div>
-        
-      </Group>
-      <Group style={{"alignItems": "start", marginBottom:'5px'}}>
-        <Avatar size={"lg"} mt={10} src="http://cheng-bing.top/wp-content/uploads/2021/12/o_1fnjstpgc1u4i1hnq1hbf119653k52.jpeg" radius="xl" />
-        <div>
-            <Flex>
-            <Text size="md" weight={600}>
-            A-Maple Organization
-            
-          </Text>
-          <Badge
-                  variant='gradient'
-                  gradient={{ from: 'indigo', to: 'cyan' }}
-                  ml={10}
-            >
-            <IconCheck />
-            </Badge>
-            </Flex>
-          
-          <Text size="sm" weight={300}>
-              Bounded at 1996
-          </Text>
-          <Text size="xs" weight={300}>
-              Location: Vancouver, Canada
-          </Text>
-          <Text size="xs">
-            A-Maple Organization was founded in Canada and is an important supporter of animal care organization. Our volunteers have helped over 1900+ stray animals and we 
-            need more fund and volunteers now.
-          </Text>
-          <Group mt="xs">
-          <Button variant="gradient" gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }} leftIcon={<IconHeart/>} >
-                Make a Donation
-            </Button>
-            <Button variant="gradient" gradient={{ from: 'teal', to: 'blue', deg: 60 }} >
-                Learn More
-            </Button>
-          </Group>
-          
-          </div>
-        
-      </Group>
+          <Card.Section inheritPadding mt='sm' pb='md'>
+            <Group style={{ alignItems: 'start', marginBottom: '5px' }}>
+              <Avatar
+                size={'lg'}
+                mt={10}
+                src='http://cheng-bing.top/wp-content/uploads/2020/06/images.jpg'
+                radius='xl'
+              />
 
-      <Group style={{"alignItems": "start", marginBottom:'5px'}}>
-        <Avatar size={"lg"} mt={10} src="http://cheng-bing.top/wp-content/uploads/2022/09/DSC05844-scaled.jpg" radius="xl" />
-        <div >
-            <Flex>
-                <Text size="md" weight={600}>
-                Kuoluo Organization
-            
-            </Text>
-            <Badge
+              <div>
+                <Flex>
+                  <Text size='md' weight={600}>
+                    Badger Animal Home
+                  </Text>
+                  <Badge
                     variant='gradient'
                     gradient={{ from: 'indigo', to: 'cyan' }}
                     ml={10}
-                >
-                <IconCheck />
-                </Badge>
-            </Flex>
-          
-          <Text size="sm" weight={300}>
-              Bounded at 2007
-          </Text>
-          <Text size="xs" weight={300}>
-              Location: Shenzhen, China
-          </Text>
-          <Text size="xs">
-            Kuoluo Org. is an organization for animal care. We are non-profit organization that help stray animals, disabled animals in China. We are now trying to build a new 
-            animal care facility in Huangzhou and we need more donation and volunteers. We appreciate your help!
-          </Text>
-          <Group mt="xs">
-          <Button variant="gradient" gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }} leftIcon={<IconHeart/>} >
-                Make a Donation
-            </Button>
-            <Button variant="gradient" gradient={{ from: 'teal', to: 'blue', deg: 60 }} >
-                Learn More
-            </Button>
-          </Group>
-          
-          </div>
-        
-      </Group>
-      </Card.Section>
-    </Card>
-    
-      
+                  >
+                    <IconCheck />
+                  </Badge>
+                </Flex>
+
+                <Text size='sm' weight={300}>
+                  Bounded at 2001
+                </Text>
+                <Text size='xs' weight={300}>
+                  Location: Madison, WI
+                </Text>
+                <Text size='xs'>
+                  Badger Animal Home is an organization set up by students and
+                  other volunteers in Madison. The group was founded at 2001 and
+                  now we are experiencing a high volume of animal in our campus.
+                  We are currently short of funding.
+                </Text>
+                <Group mt='xs'>
+                  <Button
+                    variant='gradient'
+                    gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }}
+                    leftIcon={<IconHeart />}
+                  >
+                    Make a Donation
+                  </Button>
+                  <Button
+                    variant='gradient'
+                    gradient={{ from: 'teal', to: 'blue', deg: 60 }}
+                  >
+                    Learn More
+                  </Button>
+                </Group>
+              </div>
+            </Group>
+            <Group style={{ alignItems: 'start', marginBottom: '5px' }}>
+              <Avatar
+                size={'lg'}
+                mt={10}
+                src='http://cheng-bing.top/wp-content/uploads/2021/12/o_1fnjstpgc1u4i1hnq1hbf119653k52.jpeg'
+                radius='xl'
+              />
+              <div>
+                <Flex>
+                  <Text size='md' weight={600}>
+                    A-Maple Organization
+                  </Text>
+                  <Badge
+                    variant='gradient'
+                    gradient={{ from: 'indigo', to: 'cyan' }}
+                    ml={10}
+                  >
+                    <IconCheck />
+                  </Badge>
+                </Flex>
+
+                <Text size='sm' weight={300}>
+                  Bounded at 1996
+                </Text>
+                <Text size='xs' weight={300}>
+                  Location: Vancouver, Canada
+                </Text>
+                <Text size='xs'>
+                  A-Maple Organization was founded in Canada and is an important
+                  supporter of animal care organization. Our volunteers have
+                  helped over 1900+ stray animals and we need more fund and
+                  volunteers now.
+                </Text>
+                <Group mt='xs'>
+                  <Button
+                    variant='gradient'
+                    gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }}
+                    leftIcon={<IconHeart />}
+                  >
+                    Make a Donation
+                  </Button>
+                  <Button
+                    variant='gradient'
+                    gradient={{ from: 'teal', to: 'blue', deg: 60 }}
+                  >
+                    Learn More
+                  </Button>
+                </Group>
+              </div>
+            </Group>
+
+            <Group style={{ alignItems: 'start', marginBottom: '5px' }}>
+              <Avatar
+                size={'lg'}
+                mt={10}
+                src='http://cheng-bing.top/wp-content/uploads/2022/09/DSC05844-scaled.jpg'
+                radius='xl'
+              />
+              <div>
+                <Flex>
+                  <Text size='md' weight={600}>
+                    Kuoluo Organization
+                  </Text>
+                  <Badge
+                    variant='gradient'
+                    gradient={{ from: 'indigo', to: 'cyan' }}
+                    ml={10}
+                  >
+                    <IconCheck />
+                  </Badge>
+                </Flex>
+
+                <Text size='sm' weight={300}>
+                  Bounded at 2007
+                </Text>
+                <Text size='xs' weight={300}>
+                  Location: Shenzhen, China
+                </Text>
+                <Text size='xs'>
+                  Kuoluo Org. is an organization for animal care. We are
+                  non-profit organization that help stray animals, disabled
+                  animals in China. We are now trying to build a new animal care
+                  facility in Huangzhou and we need more donation and
+                  volunteers. We appreciate your help!
+                </Text>
+                <Group mt='xs'>
+                  <Button
+                    variant='gradient'
+                    gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }}
+                    leftIcon={<IconHeart />}
+                  >
+                    Make a Donation
+                  </Button>
+                  <Button
+                    variant='gradient'
+                    gradient={{ from: 'teal', to: 'blue', deg: 60 }}
+                  >
+                    Learn More
+                  </Button>
+                </Group>
+              </div>
+            </Group>
+          </Card.Section>
+        </Card>
       </Flex>
     </>
   );

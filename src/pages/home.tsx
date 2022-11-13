@@ -10,7 +10,7 @@ import {
   TypographyStylesProvider,
   ActionIcon,
   Badge,
-  Menu
+  Menu,
 } from '@mantine/core';
 import { useState } from 'react';
 import {
@@ -94,7 +94,7 @@ function Home() {
       <Header height={60} className={classes.header} mb={0}>
         <div className={classes.inner}>
           <Group>
-            <Menu shadow="md" width={200} onClose={toggle}>
+            <Menu shadow='md' width={200} onClose={toggle}>
               <Menu.Target>
                 <Burger opened={opened} onClick={toggle} size='sm' />
               </Menu.Target>
@@ -112,11 +112,7 @@ function Home() {
             />
           </Group>
           <Group>
-            <Avatar
-              src='logo_transparent.png'
-              alt="it's me"
-              size={'lg'}
-            />
+            <Avatar src='logo_transparent.png' alt="it's me" size={'lg'} />
           </Group>
         </div>
       </Header>

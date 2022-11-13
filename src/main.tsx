@@ -43,12 +43,12 @@ function Main() {
         },
       ],
       errorElement: <Errorpage />,
-      },
+    },
 
-      {
-        path: '/',
-        element: <Index />,
-      },
+    {
+      path: '/',
+      element: <Index />,
+    },
   ]);
 
   return (
