@@ -43,11 +43,11 @@ function Main() {
         },
       ],
       errorElement: <Errorpage />,
-    },
-    {
-      path: '/index',
-      element: <Index />,
-    },
+      },
+      {
+        path: '/',
+        element: <Index />,
+      },
   ]);
 
   return (
