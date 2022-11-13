@@ -101,7 +101,7 @@ function Home() {
           </Group>
           <Group>
             <Avatar
-              src='./assets/logo_transparent.png'
+              src='./public/logo_transparent.png'
               alt="it's me"
               size={'lg'}
             />

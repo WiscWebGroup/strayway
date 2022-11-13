@@ -39,7 +39,7 @@ function Index() {
             <Container style={{"backgroundColor": "rgba(86, 92, 97, .5)", "height": "10vh", "alignItems":"left", "position": "relative"}}>
                 <Image
                     width={"10vh"}
-                    src={"../assets/logo_transparent.png"}
+                    src={"../public/logo_transparent.png"}
                     fit={"contain"}
                     radius={"lg"}
                     style={{"position" : "relative", "float": "left"}}

@@ -92,7 +92,7 @@ function Donate() {
         <div className={classes.inner}>
         <Group>
             <Avatar
-              src='./assets/logo_transparent.png'
+              src='./public/logo_transparent.png'
               alt="it's me"
               size={'md'}
             />
