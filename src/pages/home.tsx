@@ -282,8 +282,8 @@ function Home() {
               radius='xl'
             />
             <div>
-              <Text size='sm'>
-                Antares Animal Group
+              <Flex align={'end'}>
+                <Text size='sm'>Antares Animal Group</Text>
                 <Badge
                   variant='gradient'
                   gradient={{ from: 'indigo', to: 'cyan' }}
@@ -291,7 +291,7 @@ function Home() {
                 >
                   <IconCheck />
                 </Badge>
-              </Text>
+              </Flex>
               <Text size='xs' color='dimmed'>
                 1 day ago
               </Text>

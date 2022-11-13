@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './pages/home';
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Profile from './pages/profile';
-import {
-  MantineProvider,
-  ColorSchemeProvider,
-  ColorScheme,
-} from '@mantine/core';
+import { MantineProvider } from '@mantine/core';
 import Navbar from './components/navbar';
 import './global.css';
 import Report from './pages/report';
