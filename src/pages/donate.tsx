@@ -190,7 +190,6 @@ function Donate() {
                     <IconCheck />
                   </Badge>
                 </Flex>
-0
                 <Text size='sm' weight={300}>
                   Founded in 2001
                 </Text>
