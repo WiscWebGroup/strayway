@@ -35,11 +35,11 @@ function Index() {
 
   return (
     <>
-        <div style={{"backgroundImage": "url('../public/jack-russell-2310391_960_720.jpg')", }}>
+        <div style={{"backgroundImage": "url('jack-russell-2310391_960_720.jpg')", }}>
             <Container style={{"backgroundColor": "rgba(86, 92, 97, .5)", "height": "10vh", "alignItems":"left", "position": "relative"}}>
                 <Image
                     width={"10vh"}
-                    src={"../public/logo_transparent.png"}
+                    src={"logo_transparent.png"}
                     fit={"contain"}
                     radius={"lg"}
                     style={{"position" : "relative", "float": "left"}}
@@ -61,7 +61,7 @@ function Index() {
             </Container>
         </div>
 
-        <div style={{"backgroundImage": "url('../public/cat-2536662_960_720.jpg')", "marginTop": "-10vh", "backgroundSize": "cover"}}>
+        <div style={{"backgroundImage": "url('cat-2536662_960_720.jpg')", "marginTop": "-10vh", "backgroundSize": "cover"}}>
             <Container style={{"height": "46vh"}}>
                 <Title size='xl' weight={800} variant="gradient" gradient={{ from: '#ed6ea0', to: '#ec8c69', deg: 35 }} style={{"fontSize": "40px", "marginTop": "8vh"}}>
                         Here, We Provide Love & Care

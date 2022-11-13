@@ -13,6 +13,7 @@ import './global.css';
 import Report from './pages/report';
 import Donate from './pages/donate';
 import Index from './pages';
+import Offer from './pages/offer';
 
 function Main() {
   const router = createBrowserRouter([
@@ -42,7 +43,7 @@ function Main() {
         },
         {
           path: '/offer',
-          element: <p>Offer Page</p>,
+          element: <Offer/>,
         },
       ],
     },
